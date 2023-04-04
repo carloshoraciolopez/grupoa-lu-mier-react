@@ -1,0 +1,11 @@
+.menuContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuContainer div {
+    height: 100px;
+    width: 200px;
+    background-image: url(../../../public/images/comafi-logo.png);
+    background-size: cover ;
+}
