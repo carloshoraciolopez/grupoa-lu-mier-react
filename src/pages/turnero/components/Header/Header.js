@@ -1,4 +1,4 @@
-import thisStyle from '../../Turnero.module.css';
+import thisStyle from './Header.module.css';
 
 function Header () {
     return (

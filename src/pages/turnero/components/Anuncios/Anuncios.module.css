@@ -1,0 +1,11 @@
+.anunciosContainer {
+    background-color: bisque;
+}
+.anunciosWrapper {
+    /* background-color: blue; */
+    width: 70vw;
+}
+.anunciosWrapper video{
+    width: inherit;
+    height: auto;
+}

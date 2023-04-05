@@ -1,0 +1,4 @@
+.turnosContainer {
+    background-color: red;
+    width: calc(100vw - 70vw);
+}
