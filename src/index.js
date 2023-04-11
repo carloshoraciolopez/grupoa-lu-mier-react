@@ -8,11 +8,13 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import TurneroPage from './pages/turnero/TurneroPage';
+import Turnos from './pages/turnos/Turnos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-    <TurneroPage />
+    // <TurneroPage />
+    <Turnos/>
   // </React.StrictMode>
 );
 

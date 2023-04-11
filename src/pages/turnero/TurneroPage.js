@@ -1,5 +1,11 @@
 import thisStyle from './Turnero.module.css';
 import Header from  './components/Header/Header';
+<<<<<<< Updated upstream
+=======
+import Anuncios from './components/Anuncios/Anuncios';
+import Turnos from './components/Turnos/Turnos';
+// import logo from '../../../public/logo192.png'
+>>>>>>> Stashed changes
 
 function TurneroPage () {
 
