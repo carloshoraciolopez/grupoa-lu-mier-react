@@ -33,7 +33,7 @@ function Turnos () {
     return (
         <>
             <Container maxWidth="lg">
-                <Box sx={{ bgcolor: '#cfe8fc' }} >
+                <Box sx={{ bgcolor: '#cfe8fc', padding: 1,margin: 1}}  >
                     <Stack spacing={1}                         
                         direction={{ xs: 'column', sm: 'row' , md: 'column'}}
                         >
@@ -50,10 +50,10 @@ function Turnos () {
                     </Stack>
                 </Box>
             </Container>            
-            <Container maxWidth="lg">
-                <Box sx={{ bgcolor: '#afe8fc' }} >
-                    <Stack spacing={5}                         
-                        direction={{ xs: 'row'}}
+            <Container maxWidth='lg'>
+                    <Stack spacing={5}
+                        direction={{ xs: 'row' } }
+                        justifyContent="space-between"
                         >
                         <Button 
                             variant="contained" 
@@ -69,9 +69,7 @@ function Turnos () {
                             >
                                 Home
                         </Button>
-
                     </Stack>
-                </Box>
             </Container>            
         </>
     );
