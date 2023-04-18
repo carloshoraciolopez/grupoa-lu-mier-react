@@ -6,6 +6,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import HomeIcon from '@mui/icons-material/Home';
+import { useNavigate } from 'react-router-dom';
 
 function Turnos () {
     const opciones = [
@@ -30,6 +31,14 @@ function Turnos () {
             opcion: 'Atencion embarazadas'
         }
     ]
+
+    const navigate = useNavigate();
+    
+    const irA = () => {
+        //uso del api de react router dom para navegar
+        navigate('/formulario');
+    }
+
     return (
         <>
             <Container maxWidth="lg">
@@ -68,6 +77,14 @@ function Turnos () {
                             startIcon={<HomeIcon />}
                             >
                                 Home
+                        </Button>
+                        <Button 
+                            onClick={irA}
+                            variant="contained" 
+                            color="primary"
+                            startIcon={<HomeIcon />}
+                            >
+                                Formulario
                         </Button>
                     </Stack>
             </Container>            
