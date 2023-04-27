@@ -10,7 +10,7 @@ export class AxiosResourceRepository extends ResourceRepository {
 
     async findAll (){
         //si completo la logica que no hizo el padre!!
-        const response = axios.get(this.basePath);
+        const response = await axios.get(this.basePath);
 
         return response.data;
     }

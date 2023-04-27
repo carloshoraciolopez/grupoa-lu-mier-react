@@ -10,17 +10,21 @@ function ResourcePage () {
 
     const [res, setRes] = useState([]);
     
-    useEffect(async ()=>{
+    useEffect(()=>{
         //mirar por aca....
-        const resources = await repository.findAll();
-        setRes(resources);
+        
+        async function fetchData() {
+            const resources = await repository.findAll();
+            setRes(resources);
+        }
+        fetchData();
     },[]);
 
     return (
         <div>
-            {/* {
-                JSON.stringify(resources)
-            } */}
+            {
+                JSON.stringify(res)
+            }
         </div>
     )
 }
