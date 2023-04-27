@@ -53,6 +53,10 @@ function Turnos() {
     const irARedux = () => {
         navigate('/redux');
     }
+    
+    const irAResourcePage = () => {
+        navigate('/resources');
+    }
     return (
         <>
             <Container maxWidth='lg' 
@@ -114,8 +118,9 @@ function Turnos() {
                         variant="contained"
                         color="primary"
                         startIcon={<HomeIcon />}
+                        onClick={irAResourcePage}
                     >
-                        Home
+                        Resource
                     </Button>
                     <Button
                         onClick={irA}

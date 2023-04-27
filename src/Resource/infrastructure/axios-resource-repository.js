@@ -4,6 +4,7 @@ import axios from 'axios';
 export class AxiosResourceRepository extends ResourceRepository {
 
     constructor(basePath) {
+        super();
         this.basePath = basePath;
     }
 
